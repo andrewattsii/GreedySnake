@@ -75,6 +75,14 @@ public class Gamepannel extends JPanel implements Runnable, KeyListener{
 			if(snake.size() > size) {
 				snake.remove(0);
 			}
+			
+			if(apples.size() == 0) {
+				int xCoor = r.nextInt(49);
+				int yCoor = r.nextInt(49);
+				
+				apple = new Apple(xCoor, yCoor, 10);
+				apples.add(apple);
+			}
 		}
 		if(apples.size() == 0) {
 			
