@@ -10,9 +10,10 @@ public class Main {
 		frame.add(gamepannel);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("Snake");
-		frame.setLocationRelativeTo(null);
 		frame.pack();
 		frame.setVisible(true);
+		frame.setLocationRelativeTo(null);
+
 	}
 	
 	public static void main(String[] args) {
