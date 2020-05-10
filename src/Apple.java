@@ -17,7 +17,7 @@ public class Apple {
 		
 	}
 	public void draw(Graphics g)	{
-		g.setColor(Color.YELLOW);
+		g.setColor(Color.BLUE);
 		g.fillRect(xCoor * width, yCoor * height, width, height);
 	}
 	public int getxCoor() {
