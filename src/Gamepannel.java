@@ -83,6 +83,14 @@ public class Gamepannel extends JPanel implements Runnable, KeyListener{
 				apple = new Apple(xCoor, yCoor, 10);
 				apples.add(apple);
 			}
+			
+			for(int i = 0; i  < apples.size(); i ++) {
+				if(xCoor == apples.get(i).getxCoor() && yCoor == apples.get(i).getyCoor()) {
+					size++;
+					apples.remove(i);
+					i++;
+				}
+			}
 		}
 		if(apples.size() == 0) {
 			
